@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Late Show Video Player</title>
+	<link rel="stylesheet" type="text/css" href="base.css">
+	<script type="text/javascript" src="base.js"></script>
+</head>
+<body>
+	<div id="player">
+		<div id="video-container">
+			<video id="video" poster="images/logo.jpg">
+				<source src="late show casino.m4v">
+				<b>We're sorry, you are not able to view the video</b>
+			</video>
+		</div>
+		<div id="progressbar-container">
+			<div id="progressbar"></div>
+		</div>
+		<div id="controls-container">
+			<img id="play-button" src="images/play.png">
+			<div id="duration">
+				<span id="current">0:00</span>
+				/
+				<span id="totaltime">0:00</span>
+			</div>
+			<img id="sound-button"src="images/sound.png">
+			<div id="volume-container">
+				<div id="volumebar"></div>
+			</div>
+			<img id="fullscreen-button" src="images/fullscreen.png">
+		</div>
+	</div>
+</body>
+</html>

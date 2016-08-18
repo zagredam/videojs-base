@@ -1,0 +1,82 @@
+video::-webkit-media-controls-enclosure{
+	display: none !important;
+}
+#player{
+	display: inline-block;
+	background-color: rgb(30, 30, 30);
+	user-select:none;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	font-family: sans-serif;
+}
+#video-container{
+	height:360px;
+	width: 640px;
+	position: relative;
+	margin: auto;
+}
+video{
+	height: 100%;
+	width: 100%;
+}
+#screen{
+	height: 100%;
+	width: 100%;
+	line-height: 360px;
+	text-align: center;
+	position: absolute;
+	z-index: 1 !important;
+}
+#screen img{
+	vertical-align: middle;
+}
+#progressbar-container{
+	height:5px;
+	margin-top: 2px;
+	background-color: grey;
+}
+#progressbar{
+	height:5px;
+	background-color: green;
+	width:0%;
+}
+#controls-container{
+	height:50px;
+	z-index:2147483646;
+}
+#controls-container > *{
+	display: inline-block;
+	height:100%;
+	vertical-align: middle;
+	margin: 0 10px;
+	background-color: green;
+}
+img, #progressbar-container, #volume-container{
+	cursor:pointer;
+}
+#duration{
+	line-height: 50px;
+	background-color: rgb(30, 30, 30);
+	color:green;
+	cursor:default;/*Removes text select cursor*/
+}
+#sound-button{
+	margin-right: 0;
+}
+#volume-container{
+	width:100px;
+	height:5px;
+	background-color: black;
+}
+#volumebar{
+	width:100%;
+	height:100%;
+	background-color: green;
+}
+#fullscreen-button{
+	float:right;
+}
+#controls-container img:hover{
+	background-color: rgb(0, 255, 0);
+}
